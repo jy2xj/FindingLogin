@@ -3,6 +3,7 @@ package com.example.jjpcoders.findinglogin;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -355,6 +356,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         protected void onCancelled() {
             mAuthTask = null;
             showProgress(false);
+        }
+
+        /**
+         * @param view
+         * go to the the end page
+         */
+        public void goToEnd(View view)
+        {
+            Intent intent = new Intent(this, EndActivity.class);
+            startActivity(intent);
         }
     }
 }
