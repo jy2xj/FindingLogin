@@ -31,6 +31,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.jjpcoders.findinglogin.MainActivity" />
         </activity>
+        <activity
+            android:name=".EndActivity"
+            android:label="@string/title_activity_end"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jjpcoders.findinglogin.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>

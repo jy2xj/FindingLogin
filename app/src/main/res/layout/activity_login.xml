@@ -72,8 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
-                android:textStyle="bold"
-                android:onClick=""/>
+                android:textStyle="bold"/>
 
 
         </LinearLayout>
@@ -85,6 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Forgot Password"
+        android:onClick="goToEnd"
         android:layout_gravity="bottom|center_horizontal" />
 
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -355,15 +356,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
 
-        /**
-         * @param view
-         * go to the the end page
-         */
-      /**  public void goToEnd(View view)
-        {
-            Intent intent = new Intent(this, EndActivity.class);
-            startActivity(intent);
-        }*/
+    }
+    /**
+     * @param view
+     * go to the the end page
+     */
+    public void goToEnd(View view)
+    {
+        Intent inten = new Intent(this, EndActivity.class);
+        startActivity(inten);
     }
 }
 
